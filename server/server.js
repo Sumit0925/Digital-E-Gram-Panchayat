@@ -23,7 +23,7 @@ const corsOptions = {
   credentials: true, //* Allow cookies to be sent
 };
 
-app.use(cors());
+app.use(cors(corsOptions));
 
 app.use(express.json());
 
