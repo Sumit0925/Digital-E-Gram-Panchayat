@@ -96,7 +96,7 @@ const login = async (req, res) => {
       role: userExist.role,
     });
   } catch (error) {
-    console.log(error);
+    console.log(error, "Login Error");
     res.status(500).json({
       success: false,
       msg: "Internal Server Error",
